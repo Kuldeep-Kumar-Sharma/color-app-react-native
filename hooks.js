@@ -4,7 +4,6 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export const useColors = () => {
   const [colors, setColors] = useState([]);
-
   const loadColors = async () => {
     const colorData = await AsyncStorage.getItem("@ColorListStore:Colors");
     if (colorData) {
