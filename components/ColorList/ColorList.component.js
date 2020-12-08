@@ -6,6 +6,7 @@ import { useColors } from "../hooks";
 import styles from "./ColorList.component.style.js";
 
 export default function ColorList({ navigation }) {
+  // custom hook
   const { colors, addColor } = useColors();
   return (
     <>
