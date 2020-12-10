@@ -23,7 +23,6 @@ export const useColors = () => {
 
   const addColor = (color) => {
     const newColor = { id: generate(), color };
-    console.log(newColor);
     setColors([newColor, ...colors]);
   };
   return { colors, addColor };
